@@ -1,5 +1,5 @@
 # Fruit Bucket
-Aplikasi ini merupakan aplikasi keranjang buah sederhana yang baru bisa menambahkan buah ke keranjang saja
+Ini adalah aplikasi keranjang buah sederhana yang baru bisa menambahkan buah ke keranjang saja
 ## Fungsionalitas
 - User dapat memilih/menambahkan buah kedalam keranjang
 - User akan mendapatkan notifikasi jika keranjang sudah penuh (max 2)
