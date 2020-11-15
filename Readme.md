@@ -6,7 +6,7 @@ Ini adalah aplikasi keranjang buah sederhana yang baru bisa menambahkan buah ke 
 ## Cara Kerja
 - Konsep Model terletakkan pada folder model yang berisikan class `Seller.cs`, `Fruit.cs`, `Bucket.cs`, dan `BucketEventListener.cs`
 - Konsep View ada pada `MainWindow.xaml`
-- Konsep Controler aku letakkan pada folder controller yang berisi class `BucketController.cs` dimana kamu bisa mengedit fungsionalitas dari program ini
+- Konsep Controler terletak pada folder controller yang berisi class `BucketController.cs` agar bisa menyunting fungsionalitasnya
 
 Untuk mengubah kapasitas keranjang bisa dilakukan di `MainWindow.xaml.cs`
 ```csharp
