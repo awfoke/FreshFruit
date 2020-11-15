@@ -1,0 +1,35 @@
+﻿<Window x:Class="FreshFruit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FreshFruit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="484" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="Fruit Shop" HorizontalAlignment="Left" Height="30" Margin="46,34,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label x:Name="label_Copy" Content="Fresh and Healthy" HorizontalAlignment="Left" Height="30" Margin="46,69,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label x:Name="label_Copy1" Content="Hi, it's your Buckets!" HorizontalAlignment="Left" Height="30" Margin="474,124,0,0" VerticalAlignment="Top" Width="130"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="95" Margin="46,124,0,0" VerticalAlignment="Top" Width="95" Source="/assets/anggur.jpg"/>
+        <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="95" Margin="243,124,0,0" VerticalAlignment="Top" Width="94" Source="/assets/apple.png"/>
+        <Image x:Name="image_Copy1" HorizontalAlignment="Left" Height="95" Margin="46,301,0,0" VerticalAlignment="Top" Width="95" Source="/assets/banana.jpg"/>
+        <Image x:Name="image_Copy2" HorizontalAlignment="Left" Height="95" Margin="243,301,0,0" VerticalAlignment="Top" Width="95" Source="/assets/orange.png"/>
+        <ListBox x:Name="ListBoxBucket" HorizontalAlignment="Left" Height="145" Margin="434,173,0,0" VerticalAlignment="Top" Width="242">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding name}" TextAlignment="Left"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="Button1" Content="Add" HorizontalAlignment="Left" Height="26" Margin="46,232,0,0" VerticalAlignment="Top" Width="95" Click="Button1_Click"/>
+        <Button x:Name="Button3" Content="Add" HorizontalAlignment="Left" Height="26" Margin="46,409,0,0" VerticalAlignment="Top" Width="95" Click="Button3_Click"/>
+        <Button x:Name="Button2" Content="Add" HorizontalAlignment="Left" Height="26" Margin="243,232,0,0" VerticalAlignment="Top" Width="95" Click="Button2_Click"/>
+        <Button x:Name="Button4" Content="Add" HorizontalAlignment="Left" Height="26" Margin="243,409,0,0" VerticalAlignment="Top" Width="95" Click="Button4_Click"/>
+
+    </Grid>
+</Window>
